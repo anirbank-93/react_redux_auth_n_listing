@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "name": "Anirban Karmakar",
+      "email": "combatant.k@gmail.com",
+      "password": "123@Abcd",
+      "id": 1
+    },
+    {
+      "name": "Nirmal Chakraborty",
+      "email": "nirmal@webhibe.com",
+      "phone": "123@Abcd",
+      "id": 2
+    }
+  ]
+}

@@ -12,5 +12,107 @@
       "phone": "123@Abcd",
       "id": 2
     }
+  ],
+
+  "prompt": [
+    {
+      "Prompt_ID": 1,
+      "Prompt_Category": "Minigame",
+      "Prompt_Ans": "I speak",
+      "Display_prompt": "eu falo",
+      "column1": "PRE",
+
+      "Tabel": "table1~table2",
+      "column": "column1-column2~column1",
+      "Correct_Answer": "table2-column2-I speak"
+    }
+  ],
+
+  "details": [
+    {
+      "Tabel": "table1",
+      "column1": "PRE",
+      "column2": "I speak",
+      "column3": "completed"
+    },
+    {
+      "Tabel": "table1",
+      "column1": "o",
+      "column2": "I drink",
+      "column3": "S"
+    },
+    {
+      "Tabel": "table1",
+      "column1": "i",
+      "column2": "I dance",
+      "column3": "M"
+    },
+    {
+      "Tabel": "table1",
+      "column1": "t",
+      "column2": "I sleep",
+      "column3": "M"
+    },
+    {
+      "Tabel": "table2",
+      "column1": "i",
+      "column2": "my car",
+      "column3": "M"
+    },
+    {
+      "Tabel": "table2",
+      "column1": "l",
+      "column2": "my home",
+      "column3": "F"
+    },
+    {
+      "Tabel": "table2",
+      "column1": "x",
+      "column2": "my song",
+      "column3": "F"
+    },
+    {
+      "Tabel": "table3",
+      "column1": "f",
+      "column2": "driving",
+      "column3": "G"
+    },
+    {
+      "Tabel": "table1",
+      "column1": "m",
+      "column2": "my bottle",
+      "column3": "S"
+    },
+    {
+      "Tabel": "table2",
+      "column1": "m",
+      "column2": "I speak",
+      "column3": "M"
+    },
+    {
+      "Tabel": "table3",
+      "column1": "i",
+      "column2": "I work",
+      "column3": "F"
+    },
+    {
+      "Tabel": "table2",
+      "column1": "n",
+      "column2": "I pray",
+      "column3": "S"
+    },
+
+    {
+      "Tabel": "table3",
+      "column1": "i",
+      "column2": "my way",
+      "column3": "M"
+    },
+    {
+      "Tabel": "table1",
+      "column1": "n",
+      "column2": "my home",
+      "column3": "F"
+    }
   ]
 }

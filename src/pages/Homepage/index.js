@@ -6,6 +6,7 @@ import { toast } from 'react-toastify';
 import data from '../../databases/db.json';
 
 // Components
+import AppRoutes from '../../routes/AppRoutes';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
@@ -27,25 +28,21 @@ const Homepage = () => {
     setallUsers(data.users);
   }, []);
 
-  // Redux data stores
-  const { user_details } = useSelector((state) => state.loginSlice);
-
   const handleChange = (e) => {
     e.preventDefault();
     setuser({ ...user, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async () => {
-    // let res = allUsers.find(
-    //   (item) => item.email == user.email && item.password == user.password
-    // );
-    dispatch(login(user));
-    console.log('api user', user_details);
+    let res = allUsers.find(
+      (item) => item.email == user.email && item.password == user.password
+    );
 
-    if (Object.keys(user_details).length > 0) {
+    if (res) {
       toast.success('Login successfully');
+      dispatch(login(user));
       setuser(loginInitialValues);
-      // navigate('/products')
+      navigate('/game');
     } else {
       toast.error('Wrong email or password');
     }

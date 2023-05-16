@@ -5,6 +5,7 @@ import thunk from 'redux-thunk';
 
 // Reducers
 import LoginSliceReducer from './auth/LoginSlice';
+import ProductSlice from './products/ProductSlice';
 
 const persistConfig = {
   key: 'root',
@@ -13,6 +14,7 @@ const persistConfig = {
 
 let rootReducer = combineReducers({
   loginSlice: LoginSliceReducer,
+  productSlice: ProductSlice,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

@@ -42,7 +42,7 @@ const Homepage = () => {
       toast.success('Login successfully');
       dispatch(login(user));
       setuser(loginInitialValues);
-      navigate('/game');
+      navigate('/products');
     } else {
       toast.error('Wrong email or password');
     }

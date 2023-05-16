@@ -2,7 +2,7 @@ import { Route, Routes, Navigate } from 'react-router-dom';
 
 // Pages
 import Homepage from '../pages/Homepage';
-import Game from '../pages/Game/Game';
+import Products from '../pages/Products/Products';
 
 // Guards
 import { LoginProtected } from '../Protected';
@@ -13,8 +13,8 @@ const AppRoutes = () => {
       <Route exact path="/" element={<Homepage />} />
       <Route
         exact
-        path="/game"
-        element={LoginProtected() ? <Game /> : <Navigate to="/" />}
+        path="/products"
+        element={LoginProtected() ? <Products /> : <Navigate to="/" />}
       />
     </Routes>
   );

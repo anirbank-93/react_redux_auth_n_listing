@@ -21,7 +21,7 @@ const Products = () => {
 
   // console.log('products', products);
   return (
-    <div className="d-flex" style={{ padding: '15px 15px' }}>
+    <div className="d-flex">
       {products.map((item, idx) => (
         <Card key={idx} style={{ width: '18rem' }}>
           <Card.Body>

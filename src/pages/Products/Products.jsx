@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 import './style.css';
@@ -14,7 +13,7 @@ const Products = () => {
   // Component did mount
   useEffect(() => {
     dispatch(getProducts());
-  }, []);
+  }, [dispatch]);
 
   // Redux data store
   const { products } = useSelector((state) => state.productSlice);

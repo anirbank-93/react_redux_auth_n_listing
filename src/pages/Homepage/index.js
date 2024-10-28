@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
 import data from '../../databases/db.json';
 
 // Components
-import AppRoutes from '../../routes/AppRoutes';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
@@ -35,7 +34,7 @@ const Homepage = () => {
 
   const handleSubmit = async () => {
     let res = allUsers.find(
-      (item) => item.email == user.email && item.password == user.password
+      (item) => item.email === user.email && item.password === user.password
     );
 
     if (res) {

@@ -12,7 +12,7 @@ const initialState = {
 
 export const login = createAsyncThunk('user_login', async (data) => {
   let response = userDb.users.find(
-    (item) => item.email == data.email && item.password == data.password
+    (item) => item.email === data.email && item.password === data.password
   );
   console.log('redux response', response);
 

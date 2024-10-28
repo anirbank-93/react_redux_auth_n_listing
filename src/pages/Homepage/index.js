@@ -13,6 +13,7 @@ import Form from 'react-bootstrap/Form';
 import { login } from '../../redux/auth/LoginSlice';
 
 const loginInitialValues = {
+  name: '',
   email: '',
   password: '',
 };
@@ -49,6 +50,16 @@ const Homepage = () => {
 
   return (
     <Form>
+      <Form.Group className="mb-3" controlId="formBasicName">
+        <Form.Label>Name</Form.Label>
+        <Form.Control
+          type="text"
+          name="name"
+          value={user.name}
+          placeholder="Enter full name"
+          onChange={(e) => handleChange(e)}
+        />
+      </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
         <Form.Control
